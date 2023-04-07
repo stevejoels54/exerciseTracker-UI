@@ -1,0 +1,57 @@
+const appActions = {
+  GET_EXERCISES_REQUEST: "GET_EXERCISES_REQUEST",
+  GET_EXERCISES_SUCCESS: "GET_EXERCISES_SUCCESS",
+  GET_EXERCISES_ERROR: "GET_EXERCISES_ERROR",
+
+  GET_USERS_REQUEST: "GET_USERS_REQUEST",
+  GET_USERS_SUCCESS: "GET_USERS_SUCCESS",
+  GET_USERS_ERROR: "GET_USERS_ERROR",
+
+  ADD_EXERCISE_REQUEST: "ADD_EXERCISE_REQUEST",
+  ADD_EXERCISE_SUCCESS: "ADD_EXERCISE_SUCCESS",
+  ADD_EXERCISE_ERROR: "ADD_EXERCISE_ERROR",
+
+  DELETE_EXERCISE_REQUEST: "DELETE_EXERCISE_REQUEST",
+  DELETE_EXERCISE_SUCCESS: "DELETE_EXERCISE_SUCCESS",
+  DELETE_EXERCISE_ERROR: "DELETE_EXERCISE_ERROR",
+
+  UPDATE_EXERCISE_REQUEST: "UPDATE_EXERCISE_REQUEST",
+  UPDATE_EXERCISE_SUCCESS: "UPDATE_EXERCISE_SUCCESS",
+  UPDATE_EXERCISE_ERROR: "UPDATE_EXERCISE_ERROR",
+
+  ADD_USER_REQUEST: "ADD_USER_REQUEST",
+  ADD_USER_SUCCESS: "ADD_USER_SUCCESS",
+  ADD_USER_ERROR: "ADD_USER_ERROR",
+
+  SET_CURRENT_USER: "SET_CURRENT_USER",
+
+  getExercises: () => ({
+    type: appActions.GET_EXERCISES_REQUEST,
+  }),
+  getUsers: () => ({
+    type: appActions.GET_USERS_REQUEST,
+  }),
+  addExercise: (exercise) => ({
+    type: appActions.ADD_EXERCISE_REQUEST,
+    exercise,
+  }),
+  deleteExercise: (id) => ({
+    type: appActions.DELETE_EXERCISE_REQUEST,
+    id,
+  }),
+  updateExercise: (id, exercise) => ({
+    type: appActions.UPDATE_EXERCISE_REQUEST,
+    id,
+    exercise,
+  }),
+  addUser: (user) => ({
+    type: appActions.ADD_USER_REQUEST,
+    user,
+  }),
+  setCurrentUser: (user) => ({
+    type: appActions.SET_CURRENT_USER,
+    user,
+  }),
+};
+
+export default appActions;
